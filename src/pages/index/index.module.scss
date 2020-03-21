@@ -1,0 +1,129 @@
+.nav_list {
+  display: flex;
+  height: 92px;
+  padding: 10px 0;
+  background: #fff;
+  .nav_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .nav_img {
+      width: 48px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .nav_content {
+      margin-top: 7px;
+      font-size: 13px;
+    }
+  }
+}
+/* 租房小组 */
+.group {
+  background-color: #f6f5f6;
+  overflow: hidden;
+  padding: 0 10px;
+  .group_title {
+    display: flex;
+    padding: 15px 0 15px 10px;
+    justify-content: space-between;
+    h3 {
+      font-size: 15px;
+    }
+
+    span {
+      color: #787d82;
+    }
+  }
+
+  .group_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .group_item {
+      flex: 0 0 48.2%;
+      height: 85px;
+      padding: 0 10px;
+      padding-bottom: 10px;
+      display: flex;
+      background-color: #fff;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      .item_left {
+        flex: 1;
+        h3 {
+          font-weight: 700;
+          font-size: 13px;
+          margin-bottom: 6px;
+        }
+
+        p {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+
+      .item_right {
+        width: 55px;
+        img {
+        }
+      }
+    }
+  }
+}
+/* 最新资讯 */
+.news {
+  background-color: #fff;
+  padding: 10px;
+  .news_title {
+    margin: 10px 0 5px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .news_item {
+    display: flex;
+    height: 120px;
+    padding: 15px 10px 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .news_left {
+      height: 90px;
+      width: 120px;
+      margin-right: 12px;
+      margin-left: 8px;
+      img {
+        height: 100%;
+        width: 120px;
+        flex-shrink: 1;
+      }
+    }
+
+    .news_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 8px;
+      h3 {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .item_origin {
+        display: flex;
+        justify-content: space-between;
+        color: #9c9fa1;
+        font-size: 12px;
+        span.item_from {
+        }
+
+        span.item_date {
+        }
+      }
+    }
+  }
+}

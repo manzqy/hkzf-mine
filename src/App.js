@@ -1,14 +1,20 @@
 import React from 'react';
-import { Button } from "antd-mobile";
-import {HashRouter} from 'react-router-dom'
-import Tabbar from './components/Tabbar'
+import {HashRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
+import Home from './pages/home'
+import MapFound from './pages/mapFound'
+import CitySelect from './pages/citySelect'
 function App(props) {
   return (
-    <HashRouter>
-      <div className="App">
-        <Tabbar {...props}></Tabbar>
-      </div>
-    </HashRouter>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Redirect to="/home"></Redirect>
+        </Route>
+        <Route path="/home" component={Home}/>
+        <Route path="/citySelect" component={CitySelect} exact/>
+        <Route path="/mapFound" component={MapFound} exact/>
+      </Switch>
+    </Router>
   );
 }
 
