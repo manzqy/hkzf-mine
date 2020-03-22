@@ -1,11 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import './index.module.scss'
 class MapFound extends Component {
-  state = {  }
-  render() { 
-    return ( 
-      <div>MapFound</div>
-     );
+  state = {}
+  componentDidMount() {
+    
+  }
+ 
+  render() {
+    return (
+      <div>
+        {/* 地图实例 */}
+        <div id="allmap"></div>
+      </div>
+    )
   }
 }
- 
-export default MapFound;
+
+export default MapFound

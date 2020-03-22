@@ -1,0 +1,73 @@
+/* 搜索框 */
+.search {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  .search_input {
+    flex: 1;
+    display: flex;
+    margin: 0 5px;
+    padding: 7px 8px 7px 5px;
+    background: #fff;
+    border-radius: 5px;
+    .search_address {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -7px;
+        background: #ccc;
+      }
+      p {
+        color: #333;
+        font-size: 13px;
+      }
+
+      .icon-arrow {
+        font-size: 12px;
+      }
+    }
+
+    .search_content {
+      flex: 4;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      font-size: 13px;
+      color: #9c9fa1;
+      cursor: pointer;
+      .icon-seach {
+        font-size: 14px;
+        margin-right: 5px;
+      }
+
+      p {
+
+      }
+    }
+  }
+
+  .search_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    .icon-map {
+      font-size: 22px;
+      color: #fff;
+    }
+  }
+}

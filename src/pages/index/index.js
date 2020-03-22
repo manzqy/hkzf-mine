@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Carousel, WingBlank } from 'antd-mobile'
 import axios, { baseURL } from '../../utils/request'
+import CityInput from '../../components/CityInput'
 import indexCss from './index.module.scss'
 import nav1 from '../../assets/images/nav-1.png'
 import nav2 from '../../assets/images/nav-2.png'
@@ -68,6 +69,13 @@ class Index extends Component {
     const {imgList, navList, imgHeight, groups, newsList} = this.state
     return (
       <Fragment>
+        {/* 搜索框start */}
+        <div className={indexCss.input}>
+          <div className={indexCss.city_input}>
+            <CityInput />
+          </div>
+        </div>
+        {/* 搜索框end */}
         {/* 轮播图start */}
         {imgList.length && (
           <Carousel autoplay infinite>
